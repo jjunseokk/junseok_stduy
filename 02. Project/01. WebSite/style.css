@@ -4,28 +4,57 @@
 
 /* 백그라운드 이미지 */
 body{
-    background-image: url(sky.jpg);
+    background-color: black;
+    /* background-image: url(sky.jpg); */
     background-repeat: no-repeat;
     background-size:cover;
+    color: white;
 }
-/* 로고 */
-h1{
-    opacity: 80%;
-    font-family: 'Nanum Brush Script', cursive;
-    display: inline-block;
+
+.Navi{
+    height: 100px;
 
 }
-/* 로고안에 a 태그 */
-a{
+.Logo{
+    display: inline-block;
+    position: absolute;
+    top : 33px;
+    left: 7px;
+}
+.Logo > a{
     text-decoration: none;
-    color: black;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
 }
-/* 로고 parkjunseok 네모박스 */
-a > span{
-    border: 2px solid black;
-    padding: 5px 5px;
-    margin: 5px 5px;
+.Menu{
+    margin: 0 auto;
+    width: 600px;
+    position: fixed;
+    left: 33%;
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+
+
 }
+.Menu li{
+    display: inline-block;
+    margin-left: 30px;
+    padding: 35px 5px;
+}
+.Menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
+}
+
 /* 사진 동그랗게 */
 .mypicture > img{
     width: 300px;
@@ -78,6 +107,8 @@ a > span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    color: white;
 }
 .skills{
     font-family: 'Nanum Brush Script', cursive;
