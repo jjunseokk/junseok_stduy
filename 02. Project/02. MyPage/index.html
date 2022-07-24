@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="박준석-프로필링크">
+    <meta property="og:description" content="내가 궁금하지 않아?">
+    <meta property="og:image" content="박준석.jpg">
+    <title>스파르타 코딩 클럽</title>
+    <style>
+
+         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+                font-family: "Pretendard",serif;
+        }
+        /* 백그라운드에 칼라 입히기 */
+        body{
+            background-color: blueviolet;
+        }
+        /* 프로필 만들기 */
+        .profile{
+            width: 100px;
+            height: 100px;
+        /* 동그라미 프로필 만들기 */
+            border-radius: 100%;
+
+            border: 2px solid white;
+
+        /* 사진 넣기 */
+            background-image: url('박준석.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main{
+            color : white;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .sub{
+            color: white;
+            font-size: 14px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .wrap{
+            width: 300px;
+            margin: 30px auto 0px auto;
+        
+        /* 안에 내용물을 정렬 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* <style> 태그안에서 .warp > a 처럼
+            오른쪽 화살괄호(>)로 표기하면 "warp"으로
+            이름붙인 div안에 모든 a 태그에 적용해줘 라는 뜻 */
+        .wrap > a {
+            width: 300px;
+            height: 50px;
+            background-color: white;
+            border-radius: 8px;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            font-weight: bold;
+            color: blueviolet;
+
+            /* 안에 내용물을 정렬 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            
+            box-shadow: 3px 3px 5px 0px black;
+        }
+
+        .wrap > a:hover {
+            background-color: rgb(120, 140, 230);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="profile"></div>
+        <h1 class="main">박준석</h1>
+        <p class="sub">박준석의 대해 알고 싶으신가요...?</p>
+        <a target="_blank" href="https://www.instagram.com/jsjs_ppark/">인스타그램</a>
+        <a target="_blank" href="https://blog.naver.com/gkemqjem12">블로그</a>
+        <a target="_blank" href="https://www.instagram.com/ggo_mi00/">꼬미 구경</a>
+        <a target="_blank" href="https://www.instagram.com/ccat_dior/">디올이 구경</a>
+        
+    </div>
+
+</body>
+</html>
