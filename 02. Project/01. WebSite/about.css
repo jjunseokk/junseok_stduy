@@ -1,0 +1,95 @@
+*{padding: 0; margin: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+body{
+    background-color: rgb(172, 169, 169);
+}
+/* hedaer */
+.Navi{
+    height: 100px;
+}
+
+/* 로고 */
+.Logo{
+    display: inline-block;
+    position: absolute;
+    top : 33px;
+    left: 7px;
+}
+.Logo{
+    display: inline-block;
+    position: absolute;
+    top : 33px;
+    left: 7px;
+}
+.Logo > a{
+    text-decoration: none;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+/* nav 메뉴바 */
+.Menu{
+    margin: 0 auto;
+    width: 600px;
+    position: fixed;
+    left: 33%;
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+.Menu li{
+    display: inline-block;
+    margin-left: 30px;
+    padding: 35px 5px;
+}
+.Menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
+}
+
+/* section */
+section{
+    /* border: 2px solid red; */
+    height: 800px;
+}
+/* article */
+.picture{
+    width: 45%;
+    height: 790px;
+    /* border: 2px solid blue; */
+    display: inline;
+    float: left;
+}
+.picture img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+aside{
+    width: 50%;
+    height: 790px;
+    /* border: 2px solid black; */
+    display: inline-block;
+}
+aside h1, p{
+    text-align: center;
+    margin: 140px 0;
+    color: white;
+}
+aside h1{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+aside p{
+    font-size: 23px;
+    font-family: 'Nanum Brush Script', cursive;
+}
