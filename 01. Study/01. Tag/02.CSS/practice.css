@@ -1,0 +1,53 @@
+.box1Disign{
+    border: 50px solid red;
+    width: 200px;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+.box2Disign{
+    border: 50px solid green;
+    width: 200px;
+    padding: 50px;
+    margin-bottom: 20px;
+    /* display: none; */
+    /* visibility: hidden; */
+    /* display: none;은 화면에 보여지지 않고 자리까지 없어진다.
+     visibility: hidden;은 화면에 보이지는 않지만 자리는 차지한다.*/
+}
+.box3Disign{
+    border: 50px solid blue;
+    width: 200px;
+    padding: 50px;
+    margin-bottom: 20px;
+    
+}
+.challenge2{
+    margin-left: 10%;
+}
+.challenge2 h1{
+    color: #9b59b6;
+}
+.challenge2 h1:first-child{
+    text-align: center;
+}
+.challenge2 h1::before{
+    content: "Topic : ";
+}
+.challenge2 p{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+.challenge2 p::first-letter{
+    font-size: 25px;
+}
+.sub-header{
+    color: #2980b9;
+}
+/* 공책모양 백그라운드. */
+body{
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #adced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
