@@ -50,6 +50,9 @@ body{
     font-weight: bold;
     font-size: 30px;
 }
+.Menu a:hover{
+    font-style: italic;
+}
 /* 사진 동그랗게 */
 .mypicture > img{
     width: 300px;
