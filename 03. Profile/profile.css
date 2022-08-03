@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
+*{margin: 0; padding: 0;}
+.container{
+    width: 1000px;
+    height: 1000px;
+    background-color: yellow;
+    position: relative;
+    margin: 0 auto;
+}
+section{
+    background-color: rgb(160, 225, 225);
+    width: 300px;
+    height: 1000px;
+}
+.picTure{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+.picTure > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px 20px;
+}
+.information{
+    line-height: 40px;
+}
+.information h1{
+    margin-bottom: 30px;
+}
+.sns a{
+    text-decoration: none;
+}
+.sns img{
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px;
+}
+.container2{
+    width: 700px;
+    height: 1000px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.container2 h1{
+    margin-bottom: 30px;
+}
+.container2 p{
+    margin-bottom: 30px;
+}
+.Experience ul{
+    margin-left: 40px;
+}
+.spat{
+    width: 700px;
+    height: 500px;
+}
+.img1 img{
+    float: left;
+    margin-right: 30px;
+}
+.img1{
+    width: 700px;
+    height: 170px;
+}
+.img2 img{
+    float: right;
+    margin-left: 30px;
+}
