@@ -1,10 +1,10 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
 /* 백그라운드 이미지 */
 body{
-    background-color: black;
+    background-color: rgb(20, 40, 84);
     /* background-image: url(sky.jpg); */
     background-repeat: no-repeat;
     background-size:cover;
