@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+html, body{
+    background-image: url("../html/cho.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size:cover; /*너비나 높이값을 기준으로 긴 부분을 적용*/
+}
+
+/* #round{
+    width: 500px;
+    height: 500px;
+    background-position: center center;
+    background-image: url("../html/gunkan.png");
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    padding: 20px;
+} */
+
+/* #mainNav{
+    background: url("../html/sd.jpg") repeat-y;
+    position: absolute;
+    top: 50px;
+    width: 60px;
+    height: 100%;
+} */
+#content{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
+    /* 문서 가운데  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: wheat; font-size: 8em;
+    font-style: italic;
+    text-transform: uppercase;/*대문자 표기법*/
+    text-shadow: 2px 2px 3px #222,
+                2px 2px 3px black;
+    letter-spacing: 12px;
+    width: 800px;
+    height: 180px;
+}
+.fileUpload a{
+    border: 3px solid rgb(255, 255, 255);
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.fileUpload{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+.fileUpload a:hover{
+    background-color: yellow;
+    color: red;
+}

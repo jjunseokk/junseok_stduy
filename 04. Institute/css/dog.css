@@ -1,0 +1,108 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    background-color: #f46075;
+    background-image: url(../html/images/nav2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 1000px;
+    height: 200px;
+}
+nav{
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+nav li{
+    float: left;
+    list-style: none;
+    margin: 0 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+}
+section{
+    width: 1000px;
+    height: 840px;
+}
+article:hover{
+    border: 2px solid green;
+    background-color: rgb(163, 224, 155);
+    transition: 2s;
+}
+
+.dogToy{
+    margin: 20px 0;
+}
+.dogHome{
+    width: 350px;
+    height: 350px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+}
+.dogHome h3,p{
+    margin: 20px 5px;
+}
+.dogFood{
+    width: 350px;
+    height: 350px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+}
+.dogFood h3,p{
+    margin: 20px 5px;
+}
+.dogPicture{
+    width: 200px;
+    height: 803px;
+    border: 2px solid green;
+    float: right;
+}
+.dogSupplies{
+    width: 350px;
+    height: 350px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+}
+.dogSupplies img{
+    margin: 5px 5px;
+}
+.dogSupplies h3,p{
+    margin: 20px 5px;
+}
+.dogName{
+    width: 350px;
+    height: 350px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+}
+.dogName h3,p{
+    margin: 20px 5px;
+}
+footer{
+    width: 1000px;
+    height: 150px;
+    background-color: black;
+}
+footer p{
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-7%, -50%);
+}
