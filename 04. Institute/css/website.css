@@ -17,6 +17,47 @@
     img{
         display: none;
     }
+    .image-menu{
+        display: none;
+    }
+    .navi li{
+        font-size: 1.5em;
+    }
+
+
+}
+@media screen and (min-width:320px) and (max-width:767px){
+    .navi li{
+        font-size: 1.5em;
+    }
+    #caffe-imfor{
+        width: 100%;
+        font-size: 2em;
+    }
+    div.caffe{
+        width: 100%;
+    }
+    div.imfor{
+        width: 100%;
+    }
+    #loadMap{
+        width: 100%;
+        font-size: 2em;
+    }
+    div.recom{
+        width: 100%;
+        height: auto;
+        font-size: 2em;
+    }
+    div.recom li{
+        line-height: 40px;
+    }
+    img{
+        display: none;
+    }
+    .image-menu{
+        display: none;
+    }
 
 }
 
@@ -27,6 +68,7 @@
 #wrap{
     width: 1000px;
     margin: 0 auto;
+    position: relative;
     /* border: 1px solid red; */
 }
 /* 메뉴바 */
@@ -39,23 +81,40 @@
 .navi li{
     float: left;
     list-style: none;
-    margin: 3%;
+    width: 33%;
+    height: 73px;
+    /* border: 1px solid rgb(208, 0, 255); */
+    text-align: center;
+    position: relative;
 }
 .navi li a{
     text-decoration: none;
     color: white;
-    text-align: center;
+    width: 100%;
+    height: 70px;
     font-size: 1em;
+    padding: 12%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* border: 1px solid red; */
 }
 .navi ul{
     /* border: 1px solid blue; */
-    width: 30%;
+    width: 60%;
+    /* padding: 1.5%; */
+    height: 70px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.navi li:hover{
+    background-color: aquamarine;
+}
 /* 배너 사이즈 */
 .banner img{
     width: 100%;
@@ -123,7 +182,6 @@ article{
     padding: 4%;
     margin: 2.5%;
 }
-
 .recom li{
     line-height: 30px;
 }
