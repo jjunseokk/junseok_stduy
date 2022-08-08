@@ -1,4 +1,96 @@
-@charset "utf-8";
-body{
-    background-color: blue;
+
+body
+{
+    background-color: lavender;
 }
+    #container {
+				width: 900px;
+				margin: 0 auto;
+				border: 1px solid #ccc;
+                position: relative;
+			         }
+	header {
+			width: 100%;
+			height: 300px;
+			background: url("../images/header.jpg") center center no-repeat;/*너비 높이성정 시 fixed미 설정*/
+			background-size: cover;
+			margin: 0;
+           position: relative;
+		}
+
+	nav {
+		/*	height: 50px;*/
+			background: #000;
+		}
+		#main-nav {
+			list-style: none;
+			margin: 0;
+	/*		padding: 10px;*/
+			text-align:center;
+		}
+		#main-nav li {
+			display: inline-block;
+            width:180px;
+			
+		}	
+  #main-nav li a
+{
+           color: #fff;
+			font-family: "맑은 고딕", 돋움;
+			font-size: 0.9em;
+            display: block;
+            padding: 10px 0;		
+}
+    header {
+				height: 400px;
+        		}
+      #intro, #map {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 50%;
+        height: 300px;
+        float: left;
+        display: inline-block;
+        margin: 0;
+        border: 1px dotted #ccc;
+        padding: 25px;
+        position: relative;
+      }
+  div.photo {
+				
+				display:none;
+			}
+#container section:nth-child(odd) {
+			background: #eee;
+		}
+		#choice .page-title {
+			/*position: absolute;
+			top: 300px;
+			left: 0;*/
+			padding: 30px 50px;
+		}
+		#choice div.text {
+        
+			}
+      #choice {
+			/*	clear: left;*/
+            padding: 25px;
+            display: block;
+            position: relative;
+          
+			}
+
+	footer {
+			position: relative;
+			width: 100%;
+			height: 100px;
+			background: #bbb;
+		}		
+		footer p {
+			font-family: 'Oleo Script', cursive;
+			font-size: 1.5em;
+			line-height: 100px;
+			color: white;
+			text-align: center;
+		}

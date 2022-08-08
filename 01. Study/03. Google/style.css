@@ -3,6 +3,7 @@
 body{
     display: contents;
 }
+/* 헤더 */
 header a{
     text-decoration: none;
     color: black;
@@ -11,17 +12,19 @@ header a{
 header a:hover{
     text-decoration: underline;
 }
-section img{
-    width: 272px;
-}
-
 .navBar{
     float: right;
     /* border: 1px solid red; */
     margin: 20px;
 }
+
+/*Section*/
+section img{
+    width: 272px;
+}
+
 section{
-    margin-top: 300px;
+    margin-top: 200px;
     text-align: center;
 }
 .search{
@@ -45,13 +48,63 @@ section{
     right: 40px;
     color: #ccc;
 }
-.search input:hover{
-
-}
 
 .button-area{
     padding-top: 18px;
 }
-button{
+.button-style{
     height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa ;
+    border-radius: 5px;
+    font-family: arial,sans-serif;
+    padding: 0 16px;
+    margin: 11px 4px;
+    font-size: 14px;
+    text-align: center;
+}
+.button-style:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 /10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.lang{
+    margin: 10px;
+}
+.lang a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+.lang a:hover{
+    text-decoration: underline;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+.footer-style{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .54);
+}
+
+.sceond-line{
+    padding: 15px 30px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .54);
+}
+.sceond-line-second{
+    float: right;
+}
+.sceond-line a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: rgba(0, 0, 0, .54);
+}
+.sceond-line a:hover{
+    text-decoration: underline;
 }

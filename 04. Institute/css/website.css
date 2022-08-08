@@ -1,5 +1,5 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
-
+/* 태블릿 */
 @media screen and (min-width:768px) and (max-width:1023px){
     #caffe-imfor{
         width: 50%;
@@ -24,11 +24,44 @@
         font-size: 1.5em;
     }
 
-
+/* 모바일 */
 }
 @media screen and (min-width:320px) and (max-width:767px){
+    #wrap{
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 10px;
+    }
     .navi li{
         font-size: 1.5em;
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        height: auto;
+        background-color: black;
+        position: relative;
+        font-weight: bold;
+        display: block;
+        top: 70px;
+    }
+    nav.navi ul{
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    nav.navi li{
+        width: 100%;
+        display: block;
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+        border-bottom: 1px solid #576979;
+        background-color: #283744;
+    }
+    nav.navi a{
+        line-height: 30px;
     }
     #caffe-imfor{
         width: 100%;
@@ -58,7 +91,34 @@
     .image-menu{
         display: none;
     }
-
+/* 모바일 메뉴바 */
+a:link, a:hover, a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #283744;
+}
+    nav a#trigger{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-left: 15px;
+        line-height: 40px;
+        position: relative;
+        top: 145px;
+        background-color: #283744;
+    }
+    nav a#trigger::after{
+        content: "";
+        background: url("../HTML/menu.png") no-repeat white;
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        top:7px;
+        right: 10px;
+        
+    }
 }
 
 /* body{
@@ -77,6 +137,7 @@
     height: 80px;
     background-color: black;
     position: relative;
+    font-weight: bold;
 }
 .navi li{
     float: left;
@@ -89,6 +150,7 @@
 }
 .navi li a{
     text-decoration: none;
+    text-shadow: 1px 1px 0 #283744;
     color: white;
     width: 100%;
     height: 70px;
