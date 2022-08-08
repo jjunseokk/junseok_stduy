@@ -1,0 +1,26 @@
+.box{
+    height: 100px;
+    width: 100px;
+}
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.locate{
+    position: sticky;
+    /* absolute는 내가 속한 부모 태그 기준으로 주어진 픽셀로 움직임
+    re는 내가 있는 기준으로 움직임
+    static은 웹브라우저에 기본값 left, top, bottom, right를 이해못함
+    fixed는 스크롤바를 내려도 화면에 고정 시키는것이다.
+    sticky는 스크롤바를 내릴때 지정한 위치에 고정시키고, 다시 돌아온다.*/
+    left: 30px;
+    top: 30px;
+}

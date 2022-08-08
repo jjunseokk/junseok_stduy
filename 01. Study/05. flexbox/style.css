@@ -1,0 +1,18 @@
+.mother{
+    border: 1px solid red;
+    display: flex;
+    height: 100vh;
+    /* 가로 조정 */
+    /* justify-content:baseline;  */
+    /* 세로 조정 */
+    align-items:flex-start;
+    /*가로로 왔다 갔다 말고 세로로 정렬*/
+    flex-direction:column;
+
+    
+}
+.childeren{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
