@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 body{
     background-color: rgb(157, 215, 166);
+    font-family: 'Nanum Brush Script', cursive;
 }
 /* hedaer */
 .Navi{
@@ -12,46 +13,39 @@ body{
 .Logo{
     display: inline-block;
     position: absolute;
-    top : 33px;
-    left: 7px;
-}
-.Logo{
-    display: inline-block;
-    position: absolute;
-    top : 33px;
+    top : 15px;
     left: 7px;
 }
 .Logo > a{
     text-decoration: none;
-    font-family: 'Nanum Brush Script', cursive;
     font-size: 40px;
     color: white;
     font-style: italic;
     font-weight: bold;
 }
-/* nav 메뉴바 */
-.Menu{
-    margin: 0 auto;
-    width: 600px;
-    position: fixed;
-    left: 33%;
-    text-align: center;
-    /* display: flex;
-    flex-direction: row;
+.Menu nav{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
     justify-content: center;
-    align-items: center; */
+}
+.Menu ul{
+    width: 33%;
+    height: 80px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .Menu li{
-    display: inline-block;
-    margin-left: 30px;
-    padding: 35px 5px;
+    float: left;
+    list-style: none;
 }
-.Menu li a{
+.Menu a{
     text-decoration: none;
-    color: white;
     font-weight: bold;
-    font-family: 'Nanum Brush Script', cursive;
-    font-size: 30px;
+    color: white;
+    font-size: 35px;
 }
 .Menu a:hover{
     font-style: italic;
@@ -61,36 +55,40 @@ body{
 section{
     /* border: 2px solid red; */
     height: 800px;
+    display: flex;
 }
 /* article */
 .picture{
-    width: 45%;
-    height: 790px;
+    width: 49%;
+    height: auto;
     /* border: 2px solid blue; */
-    display: inline;
-    float: left;
+    flex: 2 2 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 .picture img{
     width: 500px;
     height: 500px;
-    position: absolute;
-    top: 250px;
-    left: 250px;
+
 }
 aside{
-    width: 50%;
-    height: 790px;
+    width: 40%;
+    height: auto;
     /* border: 2px solid black; */
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 aside h1, p{
-    text-align: center;
-    margin: 140px 0;
+    margin: 70px 0;
     color: white;
 }
 aside h1{
     font-size: 30px;
     font-family: 'Playfair Display', serif;
+    /* border: 1px solid red; */
 }
 aside p{
     font-size: 23px;
