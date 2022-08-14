@@ -74,8 +74,7 @@ nav a#trigger::after
     
 }
 	
- #intro, #map,#choice
-{
+ #intro, #map,#choice{
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -83,34 +82,32 @@ nav a#trigger::after
 		width: 100%;
         height: 300px;
 		padding: 15px 5% 10px 5%;
-     
-      }
-		#container section:nth-child(odd) {
+}
+#container section:nth-child(odd) {
 			background: #bbb;
-		}
-		.page-title {
+}
+.page-title {
 			position: absolute;
 			top: 5px;
 			left: 0;
 			padding: 10px 20px;
-		}
-		.page-title h1 {
-				margin-bottom: 10px;
-			}		
-    .content {
-    	margin: 10px auto 10px;
-        width: 90%;
-      padding:10px;
-    }		
-		.content ol {
-			margin-top: 20px;
-		}
-		.sub-titles {
-			color: #0094ff;
-			font-weight: 600;
-		}	
-  section
-{
+}
+.page-title h1 {
+	margin-bottom: 10px;	
+}		
+.content {
+    margin: 10px auto 10px;
+    width: 90%;
+    padding:10px;
+}		
+.content ol {
+	margin-top: 20px;
+}
+.sub-titles {
+	color: #0094ff;
+	font-weight: 600;
+}	
+section{
     position: relative;
     padding: 15px;
 }
