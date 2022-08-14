@@ -34,6 +34,8 @@ div.menuBar > span{
 div.menuBar > a:hover{
     color: #1ed760;
 }
+
+/* 섹션 */
 section{
     height: 968px;
     background-color: rgb(41, 65, 171);
