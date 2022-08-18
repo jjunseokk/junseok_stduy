@@ -4,73 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 전송할 때 뜨는 이미지 -->
     <meta property="og:title" content="junseok Webpage">
     <meta property="og:description" content="어서와 여긴 처음이지?">
     <meta property="og:image" content="my2.jpg">
-    <link rel="stylesheet" media="screen and (min-width:1024px)" href="style.css">
-    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:767px)" href="style_mobile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
-    <title>자기소개서</title>
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/ce31c7bfd0.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet"  href="style.css">
+    <!-- <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:767px)" href="style_mobile.css"> -->
+  
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">    
+    <!-- 제목 아이콘 -->
+    <link rel="shortcut icon" type="image/x-icon" href="ghost-solid.svg">
+    <title>💥Junseok💥</title>
 </head>
 <body>
-    <div class="back">
-        <div class="Navi">
-            <div class="Logo">
-                <a href="index.html">
-                    Park junseok
-                </a>
-            </div>
-            <div class="Menu">
-                <nav>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="what i love.html">What I love</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <nav class="navbar">
+        <div class="menu_logo">
+            <i class="fa-solid fa-ghost"></i>
+            <a href="index.html">Junseok</a>
         </div>
-        <div class="mypicture">
-            <p>Hello, welcome park land</p>
-            <img src="park.jpg" alt="my">
-        </div>
-        <div class="profile">
-            <h2>간단 소개</h2>
-            <div class="profileBox">
-                <p>
-                    안녕하세요, 저는 현재 프론트엔드 웹개발을 준비하고 있습니다.
-                    현재는 부족하지만 어떤 일에든 최선을 다하고 있습니다.
-                    잘부탁드립니다. 그럼 이만 많관부
-                </p>
-            </div>
-        </div>
-        <div class="skills">
-            <h2>Skills</h2>
-            <div class="skillsBox">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </div>
-        </div>
-        <div class="bottom">
-            <h2>SNS</h2>
-            <div class="flex-center">
-                <a href="https://www.instagram.com/jsjs_ppark/">
-                    <img class="icon-hover"  src="instar.png" alt="instar">
-                </a>
-                <a href="https://blog.naver.com/gkemqjem12">
-                    <img class="icon-hover" src="블로그2.png" alt="blog">
-                </a>
-                <a href="https://velog.io/@oask12">
-                    <img class="icon-hover" src="velog.jpg" alt="velog">
-                </a>
-            </div>
-        </div>
-        <footer>
             
-        </footer>
+        <ul class="menu">
+            <li><a href="about.html">🙋‍♂️About me</a></li>
+            <li><a href="">🩸Skill up</a></li>
+            <li><a href="">💛Favorite</a></li>
+            <li><a href="">📸Gallery</a></li>
+        </ul>
+
+        <ul class="navbar_icons">
+            <a target="_blank" href="https://www.instagram.com/jsjs_ppark/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://velog.io/@oask12"><i class="fa-solid fa-blog"></i></a>
+            <a target="_blank" href="https://github.com/jjunseokk"><i class="fa-brands fa-github"></i></a>
+        </ul>
+
+        <a href="#" class="navbar_togleBtn"><i class="fa-solid fa-bars"></i></a>
+    </nav>
+    <div class="container">
+        <h1 class="first_line">Park junseok</h1>
+        <h1 class="second_line">Web page</h1>
     </div>
 
+    <section id="About_me">
+        <div class="text">
+            <h1>
+                Why did I learn coding?
+            </h1>
+            <p>
+                안녕하세요, 프론트엔드 개발자로 달려나가는 박준석입니다. <br>
+                <br>
+                프론트엔드 코딩이 좋아 달려오게 된 프로트엔드 <span class="line">주니어개발자</span> 입니다.
+
+            </p>
+        </div>
+
+    <!-- 자바스크립트 -->
+    <script src="main.js" defer></script>
 
     
 </body>

@@ -1,153 +1,286 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
+/* 변수 */
+:root{
+    --text-color : #f0f4f5;
+    --background-color : #183153;
+    --aceent-color : #f0f4f5;
+}
 /* 백그라운드 이미지 */
 body{
-    background-color: rgb(20, 40, 84);
-    /* background-image: url(sky.jpg); */
+    background-image: url("mymy.gif");
     background-repeat: no-repeat;
-    background-size:cover;
-    color: white;
-    font-family: 'Nanum Brush Script', cursive;
-}
+    background-size: cover;
+    background-position: center;
 
-.Navi{
-    height: 100px;
+    font-family: 'Nanum Myeongjo', serif;
 }
-.Logo{
-    display: inline-block;
-    position: absolute;
-    top : 15px;
-    left: 7px;
-}
-.Logo > a{
+/* 로고 */
+a{
     text-decoration: none;
-    font-size: 40px;
-    color: white;
-    font-style: italic;
-    font-weight: bold;
-}
-.Menu nav{
-    width: 100%;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-}
-.Menu ul{
-    width: 45%;
-    height: 80px;
-    /* border: 1px solid blue; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.Menu li{
-    float: left;
-    list-style: none;
-}
-.Menu a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    font-size: 35px;
-}
-.Menu a:hover{
-    font-style: italic;
-}
-/* 사진 동그랗게 */
-.mypicture > img{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-}
-/* 프로필 중앙에 사진 정렬과 내용 */
-.mypicture{
-    margin-top: 100px;
-
-    font-size: 50px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-/* 프로필 소개 */
-.profile{
-    margin : 0px auto 30px;
-    display: inline-block;
-    width: 300px;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    font-size: 25px;
+    color: var(--text-color);
     font-weight: bolder;
 }
-
-/* 인스타그램 가운데 정렬 */
-.bottom{
-
+.navbar{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 8px 12px;
+    font-size: 24px;
+    color: var(--text-color);
 }
-.skills > h2{
 
-    font-size: 30px;
+/* 메뉴 */
+.menu{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    color: white;
+    list-style: none;
 }
-.skills{
-
-    font-size: 25px;
-
-    margin : 0px auto 30px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.menu li{
+    padding: 8px 24px;
 }
-.bottom > h2 {
-
-    font-size: 30px;
-
+.menu li:hover{
+    transform: scale(120%);
+    text-decoration: underline;
 }
-/* 인스타그램 링크 */
-.flex-center{
+.menu li a{
+    text-shadow: 3px 3px 4px #000;
+}
+
+/* 아이콘 */
+.navbar_icons a{
+    padding: 8px 12px;
+}
+.navbar_icons i:hover{
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
+/* 햄버거 박스 */
+.navbar_togleBtn{
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--aceent-color);
+    display: none;
+}
+/* container */
+.container{
+    width: 100%;
+    height: 865px;
     /* border: 1px solid red; */
-    width: 33%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    animation: move-text 1s ease-out;
 }
-.bottom > div > a{
-    font-size: 15px;
-    color: black;
-    border: 2px;
+.container h1{
+    color: var(--text-color);
+    font-size: 5em;
+    text-shadow: 3px 3px 4px #000;
+    letter-spacing: 4px;
+    font-style: italic;
+}
+.first_line{
+    position: relative;
+    left: 50px;
+}
+.second_line{
+    position: relative;
+    left: 40px;
+}
+
+/* section #About_me */
+#About_me{
+    width: 100%;
+    height: 865px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    animation: move-text 1s ease-out;
+}
+.text h1{
+    width: 100%;
+    color: var(--text-color);
+    text-shadow: 3px 3px 4px #000;
+    font-size: 4rem;
+    margin-bottom: 20px;
 
 }
-/* 인스타그램 이미지 조절 */
-div > a > img{
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-    margin-bottom: 50px;
+.text p{
+    width: 100%;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #000;
+}
+/* 밑줄 형광펜 */
+.line{
+    background: linear-gradient(2deg, #f500d4, transparent 50%);
 }
 
-/* 인스타그램 페이스북 아이콘 호버 */
-.icon-hover:hover{
-    width: 150px;
-    height: 150px;
+/* 애니메이션 */
+@keyframes move-text {
+    from{
+        position: relative;
+        left: -1000px;
+        opacity: 0%;
+    }
+    to{
+        position: relative;
+        left: 0px;
+        opacity: 100%;
+    }
 }
 
+@keyframes reverse {
+    from{
+        position: relative;
+        left: 0px;
+        opacity: 100%;
+    }
+    to{
+        position: relative;
+        left: -1000px;
+        opacity: 0%;
+    }
+}
 
+/* 반응형 미디어 쿼리 */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body{
+        background-image: url("mymy.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } 
+    .container h1{
+        color: var(--text-color);
+        font-size: 3em;
+        text-shadow: 3px 3px 4px #000;
+        letter-spacing: 4px;
+        font-style: italic;
+    }
+
+    .text h1{
+        width: 100%;
+        color: var(--text-color);
+        text-shadow: 3px 3px 4px #000;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .text p{
+        width: 100%;
+        color: var(--text-color);
+        font-size: 1rem;
+        text-shadow: 1px 1px 2px #000;
+        text-align: center;
+    }
+
+    /* 메뉴바 */
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 8px 12px;
+        display: none;
+    }
+    .menu a:hover{
+        background-color: #111111;
+        
+    }
+    .navbar_icons{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu_logo{
+        width: 100%;
+    }
+
+    .navbar_togleBtn{
+        display: block;
+    }
+    .menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body{
+        background-image: url("mymy.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } 
+    .container h1{
+        color: var(--text-color);
+        font-size: 2em;
+        text-shadow: 3px 3px 4px #000;
+        letter-spacing: 4px;
+        font-style: italic;
+    }
+
+
+    .text h1{
+        width: 100%;
+        color: var(--text-color);
+        text-shadow: 3px 3px 4px #000;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .text p{
+        width: 100%;
+        color: var(--text-color);
+        font-size: 0.7rem;
+        text-shadow: 1px 1px 2px #000;
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 8px 12px;
+        display: none;
+    }
+    .menu a:hover{
+        background-color: #111111;
+        
+    }
+    .navbar_icons{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu_logo{
+        width: 100%;
+    }
+    .navbar_togleBtn{
+        display: block;
+    }
+    .menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+}
