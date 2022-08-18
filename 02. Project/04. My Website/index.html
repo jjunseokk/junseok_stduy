@@ -17,16 +17,34 @@
 <body>
     <!-- 메뉴바 -->
     <header>
-        <span class="logo">
-            <img src="cat.png" alt="로고">
-        </span>
-        <nav class="menuBar">
-            <a href="index.html">Home</a>
-            <a href="#">Cat food</a>
-            <a href="#">Cat Tower</a>
-            <a href="#">Cat Toy</a>
-            <a href="#">About</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-lightblue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="cat.png" alt="logo" style="width: 100px; "></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active font-color" style="color: white;" aria-current="page" href="#">Cat Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-color" style="color: white;" href="#">Cat tower</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link font-color" style="color: white;" href="#">Cat toy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-color" style="color: white;" href="#">About</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn " style="color: white; background-color: rgb(211, 230, 237); border: 1px solid white;" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+          </nav>
     </header>
     <!-- 배너 -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -125,13 +143,13 @@
 
     <footer>
         <div class="container">
-            <div class="mb-5 pt-3 flex-style ">
-                <div class="first-box">
+            <div class="row mb-5 pt-3 flex-style">
+                <div class="col-sm-12 col-md-6 first-box">
                     <a class="font-color" href="#">서비스 이용약관</a>
                     <a class="font-color" href="#">개인정보 처리방침</a>
                     <a class="font-color" href="#">임점/제휴 문의</a>
                 </div>
-                <div class="second-box">
+                <div class="col-sm-12 col-md-6 second-box">
                     <div class="icon-box">
                         <a href="https://www.instagram.com/jsjs_ppark/"><i class="fab fa-instagram icon"></i></a>
                     </div>
@@ -144,7 +162,7 @@
                 </div>
             </div>
             <div class="infor">
-                <p class="">
+                <p>
                     주식회사 : petpetpet <span> | </span> 사업자 등록번호 : 000-00-0000 <span> | </span>개인정보관리자 : 박준석  p.junseok53@gmail.com <span> | </span> TEL : 010-2313-8636
                     <span> | </span> 경기도 광주시 초월읍 산이길 <span> | </span> 많이많이 사세요
                 </p>
