@@ -1,96 +1,219 @@
-*{padding: 0; margin: 0;}
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
-body{
-    background-color: rgb(157, 215, 166);
-    font-family: 'Nanum Brush Script', cursive;
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+:root{
+    --text-color : #f0f4f5;
+    --background-color-black : #222222;
+    --aceent-color : #f0f4f5;
 }
-/* hedaer */
-.Navi{
-    height: 100px;
+
+body{
+    background-color: var(--background-color-black);
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 /* 로고 */
-.Logo{
-    display: inline-block;
-    position: absolute;
-    top : 15px;
-    left: 7px;
-}
-.Logo > a{
+a{
     text-decoration: none;
-    font-size: 40px;
-    color: white;
-    font-style: italic;
-    font-weight: bold;
+    color: var(--text-color);
+    font-weight: bolder;
 }
-.Menu nav{
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+/* 메뉴 */
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    padding: 8px 24px;
+}
+.menu li:hover{
+    transform: scale(120%);
+    text-decoration: underline;
+}
+.menu li a{
+    text-shadow: 3px 3px 4px #000;
+}
+
+/* 아이콘 */
+.navbar_icons a{
+    padding: 8px 12px;
+}
+.navbar_icons i:hover{
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
+/* 햄버거 박스 */
+.navbar_togleBtn{
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--aceent-color);
+    display: none;
+}
+
+#container{
     width: 100%;
     /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-}
-.Menu ul{
-    width: 33%;
-    height: 80px;
-    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.Menu li{
-    float: left;
-    list-style: none;
-}
-.Menu a{
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    font-size: 35px;
-}
-.Menu a:hover{
-    font-style: italic;
+
+.onePicture{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid rebeccapurple; */
+    padding: 8px 12px;
 }
 
-/* section */
-section{
-    /* border: 2px solid red; */
-    height: 800px;
+.onePicture{
     display: flex;
-}
-/* article */
-.picture{
-    width: 49%;
-    height: auto;
-    /* border: 2px solid blue; */
-    flex: 2 2 0;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-direction: column;
 }
-.picture img{
-    width: 500px;
+.onePicture img{
+    width: 100%;
     height: 500px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    animation: picture 2s ease-in;
+}
+.onePicture p{
+    width: 100%;
+    height: 200px;
+    color: var(--text-color);
+    font-size: 1.2em;
+    font-family: 'Nanum Gothic Coding', monospace;
+    line-height: 30px;
+    text-align: center;
 
-}
-aside{
-    width: 40%;
-    height: auto;
-    /* border: 2px solid black; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-aside h1, p{
-    margin: 70px 0;
-    color: white;
-}
-aside h1{
-    font-size: 30px;
-    font-family: 'Playfair Display', serif;
     /* border: 1px solid red; */
 }
-aside p{
-    font-size: 23px;
-    font-family: 'Nanum Brush Script', cursive;
+@keyframes picture{
+    from{
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .onePicture{
+        width: 100%;
+        flex-direction: row;
+    }
+    .onePicture img{
+        width: 40%;
+        height: 400px;
+    }
+    .onePicture p{
+        font-size: 1em;
+    }
+    /* 메뉴바 */
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 8px 12px;
+        display: none;
+    }
+    .menu a:hover{
+        background-color: #111111;
+        
+    }
+    .navbar_icons{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu_logo{
+        width: 100%;
+    }
+
+    .navbar_togleBtn{
+        display: block;
+    }
+    .menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .onePicture{
+        width: 100%;
+        flex-direction: row;
+    }
+    .onePicture img{
+        width: 35%;
+        height: 200px;
+    }
+    .onePicture p{
+        padding: 5px 5px;
+        font-size: 0.6em;
+        height: 250px;
+    }
+    /* 메뉴바 */
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 8px 12px;
+        display: none;
+    }
+    .menu a:hover{
+        background-color: #111111;
+        
+    }
+    .navbar_icons{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu_logo{
+        width: 100%;
+    }
+
+    .navbar_togleBtn{
+        display: block;
+    }
+    .menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
 }

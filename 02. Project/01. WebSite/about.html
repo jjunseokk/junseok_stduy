@@ -5,49 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- 제목 아이콘 -->
     <link rel="shortcut icon" type="image/x-icon" href="ghost-solid.svg">
-    <title>About❤</title>
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/ce31c7bfd0.js" crossorigin="anonymous"></script>
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <title>🙋‍♂️About Me</title>
 </head>
 <body>
-    <div class="container">
-        <div class="Navi">
-            <div class="Logo">
-                <a href="index.html">
-                    Park junseok
-                </a>
-            </div>
-            <div class="Menu">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="what i love.html">What I love</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <nav class="navbar">
+        <div class="menu_logo">
+            <i class="fa-solid fa-ghost"></i>
+            <a href="index.html">Junseok</a>
         </div>
-        <section>
-            <article class="picture">
-                <img src="my2.jpg" alt="my">
-            </article>
-            <aside>
-                <h1>
-                    Why did I learn coding?<br>
-                    <p>
-                        안녕하세요, 제 이름은 박준석 입니다. 저는 코딩 공부를 하다가<br>
-                        포기를 하고 다른 직종의 일을 하고 있었어요. 그러던 중 고마운 사람을 <br>
-                        만났죠. 그 사람을 위해 쇼핑몰을 만들어 주겠다는 목표가 생겨서 <br>
-                        다시 프론트엔드로 뛰어들게 되었습니다. 앞으로 더욱더 노력해서 <br>
-                        공부하고 또 공부해서 웹 개발자가 되어 목표를 이루고 싶네요. <br>
-                        <br>
-                        아직 늦지 않았습니다. 혹시나 제가 만든 페이지를 보시고 계시다면 <br>
-                        지금이라도 노력하시고 공부하시면 됩니다. <br>
-                        HTML/CSS, Javascript, react를 다같이 공부 해봐용~~
-                    </p>
-                </h1>
+            
+        <ul class="menu">
+            <li><a href="about.html">🙋‍♂️About me</a></li>
+            <li><a href="">🩸Skill up</a></li>
+            <li><a href="">💛Favorite</a></li>
+            <li><a href="">📸Gallery</a></li>
+        </ul>
 
-            </aside>
-        </section>
+        <ul class="navbar_icons">
+            <a target="_blank" href="https://www.instagram.com/jsjs_ppark/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://velog.io/@oask12"><i class="fa-solid fa-blog"></i></a>
+            <a target="_blank" href="https://github.com/jjunseokk"><i class="fa-brands fa-github"></i></a>
+        </ul>
+
+        <a href="#" class="navbar_togleBtn"><i class="fa-solid fa-bars"></i></a>
+    </nav>
+    
+    <div id="container">
+        <div class="onePicture">
+            <img src="junseok.gif" alt="내 사진">
+            <p>
+                "프론트엔드 개발자가 되려는 노력중!" <br><br>
+                디지털전자과 출신이지만 코딩공부를 통해 프론트엔드 <br> 개발자 준비중입니다!
+                현재는 HTML+CSS+Javascript를 공부하고 있지만 꼭 react, vue 등을 더 배워
+                결과를 증명하는 개발자가 되길 꿈꿉니다.🎇✨ 
+            </p>
+        </div>
+        <div class="onePicture">
+            <img src="junseok1.gif" alt="내 사진">
+            <p>
+                "오늘도 끊임없이 노력하는 개발!" <br><br>
+                무엇보다 효율적으로 웹사이트를 개발하고자 프로젝트🧩를 끊임없이
+                만들어보고 또 사용자의 시점인 페르소나 시점으로 바라보며
+                좀더 혁신적이고 편리한 사이트를 만들고 부드러운 사이트를 개발하는 것입니다. 
+            </p>
+        </div>
+        <div class="onePicture">
+            <img src="junseok2.gif" alt="내 사진">
+            <p>
+                "처음은 누구나 두럽다 그것을 이겨내자!" <br><br>
+                경험이 있는 사람이나 없는 사람이나 차이는 시작지점이 다른 것 뿐
+                누구나 벽은 마주합니다. 그 벽을 어떻게 어떤과정으로 이겨내는것이 중요합니다.
+                저는 그 벽을 이겨내는 과정을 보여주는 개발자로 증명하겠습니다.🔥
+            </p>
+        </div>
     </div>
+
+    <!-- 자바스크립트 -->
+    <script src="main.js" defer></script>
 </body>
 </html>
