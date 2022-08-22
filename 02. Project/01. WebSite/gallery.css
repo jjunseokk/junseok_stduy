@@ -319,4 +319,7 @@ label.right{
     .navbar_icons.active{
         display: flex;
     }
+    .container{
+        height: 1000px;
+    }
 }
