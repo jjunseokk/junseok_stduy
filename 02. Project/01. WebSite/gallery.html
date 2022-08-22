@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ce31c7bfd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="gallery.css">
+    <!-- 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">    
+    <!-- 제목 아이콘 -->
+    <link rel="shortcut icon" type="image/x-icon" href="Image/ghost-solid.svg">
+    <title>📸gallery</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu_logo">
+            <i class="fa-solid fa-ghost"></i>
+            <a href="index.html">Junseok</a>
+        </div>
+        <ul class="menu">
+            <li><a href="about.html">🙋‍♂️About me</a></li>
+            <li><a href="skills.html">🩸Skill up</a></li>
+            <li><a href="favorite.html">💛Favorite</a></li>
+            <li><a href="gallery.html">📸Gallery</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <a target="_blank" href="https://www.instagram.com/jsjs_ppark/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://velog.io/@oask12"><i class="fa-solid fa-blog"></i></a>
+            <a target="_blank" href="https://github.com/jjunseokk"><i class="fa-brands fa-github"></i></a>
+        </ul>
+        <a href="#" class="navbar_togleBtn"><i class="fa-solid fa-bars"></i></a>
+    </nav>
+    <section class="container">
+        <div class="slide_box">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+            <input type="radio" name="slide" id="slide6">
+            <ul class="slide_list">
+                <li class="slide_item">
+                    <div>
+                        <label for="slide6" class="left"></label>
+                        <label for="slide2" class="right"></label>
+                        <a><img src="Image/banner1.jpg"></a>
+                    </div>
+                </li>
+                <li class="slide_item">
+                    <div>
+                        <label for="slide1" class="left"></label>
+                        <label for="slide3" class="right"></label>
+                        <a><img src="Image/banner2.jpg"></a>
+                    </div>
+                </li>
+                <li class="slide_item">
+                    <div>
+                        <label for="slide2" class="left"></label>
+                        <label for="slide4" class="right"></label>
+                        <a><img src="Image/banner3.jpg"></a>
+                    </div>
+                </li>
+                <li class="slide_item">
+                    <div>
+                        <label for="slide3" class="left"></label>
+                        <label for="slide5" class="right"></label>
+                        <a><img src="Image/banner4.jpg"></a>
+                    </div>
+                </li>
+                <li class="slide_item">
+                    <div>
+                        <label for="slide4" class="left"></label>
+                        <label for="slide5" class="right"></label>
+                        <a><img src="Image/banner5.jpg"></a>
+                    </div>
+                </li>
+                <li class="slide_item">
+                    <div>
+                        <label for="slide5" class="left"></label>
+                        <label for="slide1" class="right"></label>
+                        <a><img src="Image/banner6.jpg"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+
+          <!-- 자바스크립트 -->
+    <script src="main.js" defer></script>
+ </body>
+</html>

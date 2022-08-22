@@ -12,7 +12,7 @@
 
 /* 백그라운드 이미지 */
 .bg-gif{
-    background-image: url("mymy.gif");
+    background-image: url("Image/mymy.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -143,7 +143,7 @@ a{
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .bg-gif{
-        background-image: url("mymy.gif");
+        background-image: url("Image/mymy.gif");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -211,7 +211,7 @@ a{
 
 @media screen and (max-width:767px) {
     .bg-gif{
-        background-image: url("mymy.gif");
+        background-image: url("Image/mymy.gif");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

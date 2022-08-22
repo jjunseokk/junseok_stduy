@@ -7,7 +7,10 @@
 }
 
 body{
-    background-color: var(--background-color-black);
+    background-image: url(Image/back_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: 'Nanum Myeongjo', serif;
 }
 
@@ -85,7 +88,16 @@ a{
     height: 500px;
     border-radius: 10px;
     margin-bottom: 40px;
-    animation: picture 2s ease-in;
+
+}
+.move1{
+    animation: picture 1.5s ease-in;
+}
+.move2{
+    animation: picture 3s ease-in;
+}
+.move3{
+    animation: picture 4.5s ease-in;
 }
 .onePicture p{
     width: 100%;
@@ -107,7 +119,6 @@ a{
         opacity: 100%;
     }
 }
-
 @media screen and (min-width:768px) and (max-width:1023px) {
     #container{
         display: flex;
@@ -180,6 +191,7 @@ a{
         padding: 5px 5px;
         font-size: 0.6em;
         height: 250px;
+        line-height: 20px;
     }
     /* 메뉴바 */
     .navbar{

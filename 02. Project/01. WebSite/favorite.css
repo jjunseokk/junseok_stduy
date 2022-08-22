@@ -1,0 +1,192 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+:root{
+    --text-color : #f0f4f5;
+    --background-color-black : #c99676;
+    --aceent-color : #f0f4f5;
+}
+
+.border_style{
+    border: 1px solid red;
+}
+
+body{
+    background-image: url(Image/back_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--background-color-black); */
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+/* 로고 */
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bolder;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+/* 메뉴 */
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    padding: 8px 24px;
+}
+.menu li:hover{
+    transform: scale(120%);
+    text-decoration: underline;
+}
+.menu li a{
+    text-shadow: 3px 3px 4px #000;
+}
+
+/* 아이콘 */
+.navbar_icons a{
+    padding: 8px 12px;
+}
+.navbar_icons i:hover{
+    transform: scale(120%);
+    text-decoration: underline;
+}
+
+/* 햄버거 박스 */
+.navbar_togleBtn{
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--aceent-color);
+    display: none;
+}
+
+/* section container */
+.container{
+    width: 100%;
+    height: 865px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.picture{
+    width: 20%;
+    padding: 8px 12px;
+}
+.picture img{
+    width: 100%;
+    height: 350px;
+}
+.picture p{
+    color: var(--text-color);
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3em;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* 메뉴바 */
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 8px 12px;
+        display: none;
+    }
+    .menu a:hover{
+        background-color: #111111;
+        
+    }
+    .navbar_icons{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu_logo{
+        width: 100%;
+    }
+
+    .navbar_togleBtn{
+        display: block;
+    }
+    .menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+
+    .container{
+        flex-direction: column;
+
+        height: auto;
+        margin-top: 20px;
+
+    }
+    .picture{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /* 메뉴바 */
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 8px 12px;
+        display: none;
+    }
+    .menu a:hover{
+        background-color: #111111;
+        
+    }
+    .navbar_icons{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu_logo{
+        width: 100%;
+    }
+
+    .navbar_togleBtn{
+        display: block;
+    }
+    .menu.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+
+    .container{
+        flex-direction: column;
+
+        height: auto;
+        margin-top: 20px;
+
+    }
+    .picture{
+        width: 100%;
+    }
+}
+
