@@ -58,6 +58,11 @@ img{
     font-weight: bold;
     /* border: 1px solid red; */
 }
+.inputArea{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
 #inputNumber{
     width: 400px;
     height: 50px;
@@ -132,8 +137,8 @@ img{
     }
 
     #inputNumber{
-        width: 200px;
-
+        width: 180px;
+        margin-right: 10px;
         font-size: 11px;
     }
 
