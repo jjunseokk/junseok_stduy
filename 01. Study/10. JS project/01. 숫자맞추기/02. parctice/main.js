@@ -21,28 +21,31 @@ let change = document.getElementById("changeImg");
 
 startBtn.style.cursor="pointer";
 
+// 랜덤 번호 지정.
 function computerNum(){
     randomNumber = Math.floor(Math.random()*100)+1;
     console.log(randomNumber);
 }
-
+// 버튼
 startBtn.addEventListener("click", start);
 resetBtn.addEventListener("click", reset);
 
+// 마우스로 입력창을 클릭할때 입력되어 있는 값을 리셋
 inputNum.addEventListener("focus", function(){
     inputNum.value="";
 })
+
 // startbutton을 눌렀을 때 반응
 function start(){
     let inputNumValue = inputNum.value;
     console.log(inputNumValue);
 
-    
-
     if(inputNumValue > 100 || inputNumValue < 1){
         result.textContent = "1부터 100사이의 숫자만 입력해주세요."
         return;
     }
+    
+    inputNumList.push(inputNumValue);
 
     if(inputNumList.includes(inputNumValue)){
         result.textContent = "이미 입력한 숫자입니다."
@@ -66,7 +69,6 @@ function start(){
         gameEnd=true;
     }
 
-    inputNumList.push(inputNumValue);
     console.log(inputNumList);
     
     if(chance==0){
@@ -78,10 +80,9 @@ function start(){
         startBtn.style.backgroundColor="rgba(75, 87, 255, 0.4)";
         startBtn.style.cursor = "default";
     }
-
-
 };
- 
+
+// 리셋버튼 함수
 function reset(){
     inputNumValue="";
     computerNum();
@@ -92,5 +93,5 @@ function reset(){
     inputNumList = [];
     change.src="Images/go!.gif"
 };
-
+// 함수를 실행하는 것.
 computerNum();
