@@ -166,7 +166,7 @@ label.right{
     73%{left: -400%;}
     75%{left: -500%;}
     90%{left: -500%;}
-    92%{left: 0%;}
+    100%{left: 0%;}
 }
 @keyframes slide2{
     0%{left: 0%;}
@@ -181,7 +181,7 @@ label.right{
     73%{left: -400%;}
     75%{left: 100%;}
     90%{left: 100%;}
-    92%{left: 0%;}
+    100%{left: 0%;}
 }
 
 @keyframes slide3{
@@ -197,7 +197,7 @@ label.right{
     73%{left: 200%;}
     75%{left: 100%;}
     90%{left: 100%;}
-    92%{left: 0%;}
+    100%{left: 0%;}
 }
 @keyframes slide4{
     0%{left: 0%;}
@@ -212,7 +212,7 @@ label.right{
     73%{left: 200%;}
     75%{left: 100%;}
     90%{left: 100%;}
-    92%{left: 0%;}
+    100%{left: 0%;}
 }
 @keyframes slide5{
     0%{left: 0%;}
@@ -227,7 +227,7 @@ label.right{
     73%{left: 200%;}
     75%{left: 100%;}
     90%{left: 100%;}
-    92%{left: 0%;}
+    100%{left: 0%;}
 }
 @keyframes slide6{
     0%{left: 0%;}
@@ -242,7 +242,7 @@ label.right{
     73%{left: 200%;}
     75%{left: 100%;}
     90%{left: 100%;}
-    92%{left: 0%;}
+    100%{left: 0%;}
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
