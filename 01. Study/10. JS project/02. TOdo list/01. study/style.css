@@ -1,0 +1,100 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+body{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.input-area{
+    margin-bottom: 2em;
+}
+.input-style{
+    width: 50%;
+    border: 1px solid lightblue;
+}
+.task-area{
+    border: 1px solid lightblue;
+    padding: 0px;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 1px solid lightblue;
+    position: relative;
+}
+
+.task-tabs div{
+    padding: 1em;
+    cursor: pointer;
+}
+
+#under-line{
+    height: 4px;
+    background-color: pink;
+    position: absolute;
+    width: 60px;
+    left: 0px;
+    top: 52px;
+    padding: 0px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    padding: 0px;
+
+}
+.task-done{
+    text-decoration: line-through;
+    width: 100%;
+    background-color: #aaa;
+}
+.textStyle{
+    padding: 10px;
+}
+.btnArea{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grayBtn{
+    width: 50px;
+    height: 50px;
+    color: #aaa;
+    border: none;
+    background-color: white;
+}
+.greenBtn{
+    width: 50px;
+    height: 50px;
+    color: green;
+    border: none;
+    background-color: white;
+}
+.redBtn{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    color: red;
+    border: none;
+    background-color: white;
+}
+button:hover{
+    background-color: rgba(0,155,0,0.4);
+    transition: 0.7s;
+}
+.redBtn:hover{
+    background-color: rgba(255, 0, 0, 0.4);
+}
