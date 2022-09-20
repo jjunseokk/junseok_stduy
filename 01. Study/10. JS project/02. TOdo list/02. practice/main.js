@@ -23,6 +23,7 @@ let checkShow = document.getElementById("checkBtn");
 // +버튼을 누르면 리스트를 추가하는 함수 선언.
 addBtn.addEventListener("click", add); 
 
+// 마우스로 입력창을 클릭했을 때 이벤트 함수 선언.
 taskInput.addEventListener("focus", showFocus);
 
 // enter눌렀을 때 입력하기.
@@ -37,8 +38,6 @@ taskInput.addEventListener("keypress", function(event){
 function showFocus(){
     taskInput.value ="";
 }
-
-
 
 // 탭선택할때, 클릭이벤트
 for(let i=1; i<tabs.length; i++){
@@ -168,6 +167,7 @@ function trashBtn(id){
 
 function filter(event){
     mode=event.target.id;
+    // console.log(mode);
     filterList= [];
 
     // 하단 바..
