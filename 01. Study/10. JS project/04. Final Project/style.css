@@ -4,13 +4,16 @@
     --color : #fff;
 }
 body{
-    background: url("imges/weather.jpg") no-repeat center center;
+    /* background: url("imges/weather.jpg") no-repeat center center; */
     background-size: cover;
+}
+a{
+    text-decoration: none;
 }
 .container{
     border: 1px solid red;
     height: auto;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(255,255,255,.6);
 }
 
 header{
@@ -23,9 +26,12 @@ header{
     font-weight: bold;
     color: var(--text-color);
 }
-.search-area{
+#search-area{
     border-bottom: 1px solid var(--color);
     padding: 10px;
+}
+.searchBtn{
+    cursor: pointer;
 }
 #w-city{
     width: 500px;
@@ -41,7 +47,7 @@ header{
     color: var(--color);
     padding: 0px 10px;
 }
-.city{
+.city, h2{
     color: var(--text-color);
     margin-top: 100px;
     font-weight: bolder;
@@ -99,4 +105,117 @@ header{
     height: 500px;
     border: 1px solid white;
     color: var(--color);
+}
+
+
+
+/* 뉴스 */
+/* 모바일 버전 메뉴바 */
+@media screen and (max-width:769px){
+    #mySidenav {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -350px;
+        background-color: #111;
+        overflow-x: hidden;
+        /* transition: 0.5s; */
+        padding-top: 60px;
+    }
+    #mySidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    #mySidenav a:hover{
+        color: white;
+    }
+    .closebtn{
+        position: absolute;
+        top: 0px;
+        right: 25px;
+    }
+    .buggerBtn{
+        font-size:20px;
+        cursor:pointer;
+        color: black;
+        margin: 0px 3px;
+    }
+    .buggerBtn{
+        text-decoration: none;
+    }
+    .menus{
+        display: none;
+    }
+}
+
+@media screen and (min-width:769px){
+    #mySidenav {
+        display: none;
+    }
+    .buggerBtn{
+        display: none;
+    }
+    .menus{
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 4px double #000;
+    }
+}
+.inputArea{
+    display: flex;
+}
+.search-icon{
+    color: black;
+    cursor: pointer;
+    margin: 8px 10px;
+}
+.search-area-on{
+    display: block;
+}
+.search-area-off{
+    display: none;
+}
+.head-line{
+    margin-top: 1em;
+
+    display: flex;
+    justify-content: center;
+}
+
+.head-line svg{
+    width: 430px;
+}
+
+.menus button{
+    margin: 0px 10px;
+    border: none;
+    background-color: transparent;
+}
+.menus button:hover{
+   background-color: bisque;
+}
+
+.news-img-size{
+    max-width: 100%; 
+    max-height: 250px;
+}
+
+.news{
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+}
+
+.pageNav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
 }
