@@ -181,7 +181,7 @@ const render = () => {
                 <img class="news-img-size" src="${item.media}" alt="" style="width:100%">
             </div>
             <div class="col-lg-8">
-                <h2>${item.title}</h2>
+                <h3>${item.title}</h3>
                 <p>
                     ${item.summary}
                 </p>
@@ -283,7 +283,7 @@ $(function () {
 
     $(".closebtn").on("click", function () {
         $(".sidenav").animate({
-            left: "-350px"
+            left: "-450px"
         }, 200)
     })
 

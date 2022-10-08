@@ -21,25 +21,16 @@ header{
     justify-content: space-between;
     margin-top: 50px;
 }
-.today-time{
-    font-size: 2.5em;
-    font-weight: bold;
-    color: var(--text-color);
-}
+
 #search-area{
     border-bottom: 1px solid var(--color);
     padding: 10px;
 }
 .searchBtn{
     cursor: pointer;
+    color: white;
 }
-#w-city{
-    width: 500px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    color: var(--text-color);
-}
+
 #w-city::placeholder{
     color: var(--text-color);
 }
@@ -84,41 +75,46 @@ header{
     padding: 10px;
     text-align: center;
 }
-.first-line, .second-line, .third-line, .fourth-line{
-    margin: 10px auto;
-    width: 500px;
-    font-size: 1.5em;
-    padding: 15px;
-    position: relative;
-}
-.first-span, .second-span, .third-span, .fourth-span{
-    position: absolute;
-    right: 10px;
-}
-#forecast{
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
-.forecast-box{
-    width: 25%;
-    height: 500px;
-    border: 1px solid white;
-    color: var(--color);
-}
+
 
 
 
 /* 뉴스 */
 /* 모바일 버전 메뉴바 */
 @media screen and (max-width:769px){
+    .today-time{
+        font-size: 1em;
+        font-weight: bold;
+        color: var(--text-color);
+        margin-top: 10px;
+    }
+    #w-city{
+        width: 200px;
+        height: 10px;
+        background-color: transparent;
+        border: none;
+        color: var(--text-color);
+    }
+    .first-span, .second-span, .third-span, .fourth-span{
+        font-size: 1em;
+        display: block;
+        /* position: absolute; */
+        /* right: 270px; */
+    }
+    .first-line, .second-line, .third-line, .fourth-line{
+        margin: 10px auto;
+        width: 500px;
+        font-size: 1em;
+        padding: 15px;
+        position: relative;
+    }
     #mySidenav {
         height: 100%;
         width: 50%;
         position: fixed;
         z-index: 1;
         top: 0;
-        left: -350px;
+        left: -450px;
         background-color: #111;
         overflow-x: hidden;
         /* transition: 0.5s; */
@@ -154,7 +150,33 @@ header{
     }
 }
 
-@media screen and (min-width:769px){
+/* 태블릿 */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .today-time{
+        font-size: 1.3em;
+        font-weight: bold;
+        color: var(--text-color);
+        margin-top: 10px;
+    }
+    #w-city{
+        width: 300px;
+        height: 10px;
+        background-color: transparent;
+        border: none;
+        color: var(--text-color);
+    }
+    .first-span, .second-span, .third-span, .fourth-span{
+        font-size: 1em;
+        position: absolute;
+        right: 170px;
+    }
+    .first-line, .second-line, .third-line, .fourth-line{
+        margin: 10px auto;
+        width: 500px;
+        font-size: 1em;
+        padding: 15px;
+        position: relative;
+    }
     #mySidenav {
         display: none;
     }
@@ -163,6 +185,48 @@ header{
     }
     .menus{
         margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-top: 1px solid #ebebeb;
+        border-bottom: 4px double #000;
+    }
+    
+}
+/* 노트북 */
+@media screen and (min-width:1024px) {
+    .today-time{
+        font-size: 2em;
+        font-weight: bold;
+        color: var(--text-color);
+    }
+    #w-city{
+        width: 300px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        color: var(--text-color);
+    }
+    .first-span, .second-span, .third-span, .fourth-span{
+        font-size: 1em;
+        position: absolute;
+        right: 60px;
+    }
+    .first-line, .second-line, .third-line, .fourth-line{
+        margin: 10px auto;
+        width: 500px;
+        font-size: 1.5em;
+        padding: 15px;
+        position: relative;
+    }
+    #mySidenav {
+        display: none;
+    }
+    .buggerBtn{
+        display: none;
+    }
+    .menus{
+        margin-top: 1.5em;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -201,7 +265,7 @@ header{
     background-color: transparent;
 }
 .menus button:hover{
-   background-color: bisque;
+   background-color: rgba(255,255,255,.6);
 }
 
 .news-img-size{
