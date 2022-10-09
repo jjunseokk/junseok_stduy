@@ -4,8 +4,7 @@
     --color : #fff;
 }
 body{
-    /* background: url("imges/weather.jpg") no-repeat center center; */
-    /* background-size: cover; */
+    background-size: cover;
 }
 a{
     text-decoration: none;
@@ -97,15 +96,17 @@ header{
         border: none;
         color: var(--text-color);
     }
+    .first-line, .second-line, .third-line, .fourth-line{
+        padding: 10px 0px;
+        /* border: 1px solid red; */
+    }
     .first-span, .second-span, .third-span, .fourth-span{
         font-size: 1em;
         display: block;
         /* position: absolute;
         right: 0px; */
     }
-    .first-line, .second-line, .third-line, .fourth-line{
-        
-    }
+
     #mySidenav {
         height: 100%;
         width: 50%;
@@ -164,14 +165,22 @@ header{
         border: none;
         color: var(--text-color);
     }
+    .weather-text{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 15px;
+    }
+    .first-line, .second-line, .third-line, .fourth-line{
+        padding: 10px 0px;
+        /* border: 1px solid red; */
+    }
     .first-span, .second-span, .third-span, .fourth-span{
         font-size: 1em;
         position: absolute;
-        right: 70px;
+        right: 10px;
     }
-    .first-line, .second-line, .third-line, .fourth-line{
-        
-    }
+
     #mySidenav {
         display: none;
     }
@@ -206,13 +215,20 @@ header{
         border: none;
         color: var(--text-color);
     }
+    .weather-text{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 15px;
+    }
+    .first-line, .second-line, .third-line, .fourth-line{
+        padding: 20px 0px;
+        /* border: 1px solid red; */
+    }
     .first-span, .second-span, .third-span, .fourth-span{
         font-size: 1em;
         position: absolute;
-        right: 80px;
-    }
-    .first-line, .second-line, .third-line, .fourth-line{
-        
+        right: 10px;
     }
     #mySidenav {
         display: none;
